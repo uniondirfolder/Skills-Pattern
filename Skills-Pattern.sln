@@ -12,9 +12,6 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S0001_Creational", "S0003_DN_Creational\S0003_DN_Creational.vcxproj", "{9559FE04-4F32-49F1-89F0-A09AA7294E96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IATC_CSharp", "IATC_CSharp", "{9EED76B2-1054-4943-B5C7-96C6A383EF7A}"
-	ProjectSection(SolutionItems) = preProject
-		tmp.txt = tmp.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DN_Csharp", "DN_Csharp", "{7F494C83-B657-4C09-8E88-E878EDD45D40}"
 EndProject
