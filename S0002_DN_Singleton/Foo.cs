@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using Autofac;
-//using PostSharp.Aspects.Internals;
+///using PostSharp.Aspects.Internals;
 using static System.Console;
 
 namespace S0002_DN_Singleton

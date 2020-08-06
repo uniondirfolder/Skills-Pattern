@@ -5,7 +5,7 @@ using System.Text;
 //The Singleton Design Pattern - Part of the Gang of Four
 //https://www.youtube.com/watch?v=ggqjVuJ0g_8
 
-//look->[Blazor - ConfigureServices(IServiceCollection services)]<- how
+//look->[Blazor - ConfigureServices(IServiceCollection services)]<- how :)
 namespace S0001_CUI_SingletonDemo
 {
     public class TableServers

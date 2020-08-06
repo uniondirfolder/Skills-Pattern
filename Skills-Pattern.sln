@@ -7,9 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S0001_CUI_SingletonDemo", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "S0001_BlazorServer_SingletonDemo", "S0001_BlazorServer_SingletonDemo\S0001_BlazorServer_SingletonDemo.csproj", "{0A2F644E-F6EB-4BA6-A6A4-4F0131AC15F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S0002_DN_Singleton", "S0002_DN_Singleton\S0002_DN_Singleton.csproj", "{8EFB6F02-7EC5-4CC7-91B4-9110EBC64157}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S0001_Singleton", "S0002_DN_Singleton\S0001_Singleton.csproj", "{8EFB6F02-7EC5-4CC7-91B4-9110EBC64157}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S0003_DN_Creational", "S0003_DN_Creational\S0003_DN_Creational.vcxproj", "{9559FE04-4F32-49F1-89F0-A09AA7294E96}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "S0001_Creational", "S0003_DN_Creational\S0003_DN_Creational.vcxproj", "{9559FE04-4F32-49F1-89F0-A09AA7294E96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IATC_CSharp", "IATC_CSharp", "{9EED76B2-1054-4943-B5C7-96C6A383EF7A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DN_Csharp", "DN_Csharp", "{7F494C83-B657-4C09-8E88-E878EDD45D40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DN_Cplusplus", "DN_Cplusplus", "{E723BA5A-C679-4485-A839-7DECD5359284}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +76,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C9250E19-D6A1-47D0-AC67-FB9908007D0D} = {9EED76B2-1054-4943-B5C7-96C6A383EF7A}
+		{0A2F644E-F6EB-4BA6-A6A4-4F0131AC15F3} = {9EED76B2-1054-4943-B5C7-96C6A383EF7A}
+		{8EFB6F02-7EC5-4CC7-91B4-9110EBC64157} = {7F494C83-B657-4C09-8E88-E878EDD45D40}
+		{9559FE04-4F32-49F1-89F0-A09AA7294E96} = {E723BA5A-C679-4485-A839-7DECD5359284}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6DF2B630-B289-42F7-81BB-1F50F9B010FA}
