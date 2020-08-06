@@ -24,7 +24,7 @@
     <ProjectGuid>{9559fe04-4f32-49f1-89f0-a09aa7294e96}</ProjectGuid>
     <RootNamespace>S0003DNCreational</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>S0001_Creational</ProjectName>
+    <ProjectName>DN1_Creational</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
