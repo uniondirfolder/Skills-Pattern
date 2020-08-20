@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Authentication.ExtendedProtection;
-using System.Text;
 
 namespace Stateless
 {
@@ -36,11 +33,64 @@ namespace Stateless
             /// </summary>
             public TTriger Triger { get { return _underlyingTrigger; } }
 
+            /// <summary>
+            /// Ensure that the supplied arguments are compatible with those configured for this triger.
+            /// Убедитесь, что предоставленные аргументы совместимы с аргументами, настроенными для этого триггера.
+            /// </summary>
+            /// <param name="args"></param>
             public void ValidateParameters(object[] args) 
             {
                 SEnforce.ArgumentNotNull(args, "args");
-                Parame
+
+                SParameterConversion.Validate(args, _argumentTypes);
             }
+        }
+
+        /// <summary>
+        /// A configured trigger with one required argument. Настроенный триггер с одним обязательным аргументом.
+        /// </summary>
+        /// <typeparam name="TArg0"></typeparam>
+        public class ATriggerWithParameters<TArg0> : ATriggerWithParameters
+        {
+            /// <summary>
+            /// Create a configured trigger.
+            /// </summary>
+            /// <param name="underlyingTrigger">Trigger represented by this trigger configuration.</param>
+            public ATriggerWithParameters(TTriger underlyingTrigger)
+                : base(underlyingTrigger, typeof(TArg0)) { }
+        }
+
+        /// <summary>
+        /// A configured trigger with two required arguments.
+        /// </summary>
+        /// <typeparam name="TArg0">The type of the first argument.</typeparam>
+        /// <typeparam name="TArg1">The type of the second argument.</typeparam>
+        public class ATriggerWithParameters<TArg0, TArg1> : ATriggerWithParameters
+        {
+            /// <summary>
+            /// Create a configured trigger.
+            /// </summary>
+            /// <param name="underlyingTrigger"></param>
+            public ATriggerWithParameters(TTriger underlyingTrigger)
+                : base(underlyingTrigger, typeof(TArg0), typeof(TArg1)) 
+            { }
+        }
+
+        /// <summary>
+        /// A configured trigger with three required arguments.
+        /// </summary>
+        /// <typeparam name="TArg0">The type of the first argument.</typeparam>
+        /// <typeparam name="TArg1">The type of the second argument.</typeparam>
+        /// <typeparam name="TArg2">The type of the third argument.</typeparam>
+        public class ATriggerWithParameters<TArg0, TArg1, TArg2> : ATriggerWithParameters 
+        {
+            /// <summary>
+            /// Create a configured trigger.
+            /// </summary>
+            /// <param name="underlyingTrigger">Trigger represented by this trigger configuration.</param>
+            public ATriggerWithParameters(TTriger underlyingTrigger)
+                : base(underlyingTrigger, typeof(TArg0), typeof(TArg1), typeof(TArg2)) 
+            { }
         }
     }
     
