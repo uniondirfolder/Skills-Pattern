@@ -59,5 +59,18 @@ namespace Stateless {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Multiple permitted exit transitions are configured from state &apos;{1}&apos; for trigger &apos;{0}&apos;. Guard clauses must be mutually exclusive..
+        /// </summary>
+        internal static string MultipleTransitionsPermitted {
+            get {
+                return ResourceManager.GetString("MultipleTransitionsPermitted", resourceCulture);
+            }
+        }
     }
 }
+
+/*
+ * Несколько разрешенных переходов выхода настроены из состояния «{1}» для триггера «{0}». Охранные положения должны быть взаимоисключающими.
+ */

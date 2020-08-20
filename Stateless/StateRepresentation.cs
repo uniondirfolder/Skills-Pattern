@@ -38,7 +38,7 @@ namespace Stateless
 
                 if (actual.Count() > 1)
                     throw new InvalidOperationException(
-                        string.Format(State))
+                        string.Format(RStateRepresentationResources.))
             }
             public bool TryFindHandler(TTrigger trigger, out ATriggerBehaviour handler) 
             {
