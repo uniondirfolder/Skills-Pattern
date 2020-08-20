@@ -27,4 +27,17 @@ namespace Stateless
             get { return this._id; }
         }
     }
+    public partial class AStateMachine<TState, TTrigger> : AStateMachine
+    {
+        readonly IDictionary<TState,StateRepresentation>_
+
+        readonly Func<TState> _stateAccessor;
+        readonly Action<TState> _stateMutator;
+
+        public AStateMachine(Func<TState> stateAccessor, Action<TState> stateMutator) 
+        {
+            _stateAccessor = SEnforce.ArgumentNotNull(stateAccessor, "stateAccessor");
+            _stateMutator = SEnforce.ArgumentNotNull(stateMutator, "stateMutator");
+        }
+    }
 }
