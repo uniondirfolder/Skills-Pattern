@@ -10,12 +10,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>RParameterConversionResources.resx</DependentUpon>
     </Compile>
+    <Compile Update="RStateRepresentationResources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>RStateRepresentationResources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="RParameterConversionResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>RParameterConversionResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="RStateRepresentationResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>RStateRepresentationResources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
 
