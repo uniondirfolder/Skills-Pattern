@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Stateless
 {
+
     public partial class AStateMachine<TState, TTrigger> 
     {
         internal abstract class ATriggerBehaviour
