@@ -5,7 +5,7 @@ using System.Text;
 namespace Stateless
 {
     /// <summary>
-    /// Базовый класс для всех конечных автоматов123
+    /// Базовый класс для всех конечных автоматов1234
     /// </summary>
     public abstract class AStateMachine
     {
